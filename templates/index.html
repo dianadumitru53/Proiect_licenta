@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="welcome-container">
+            <h1>Welcome to Our Chatbot!</h1>
+            <p>This chatbot is here to assist you with any questions or concerns you may have. Feel free to ask anything!</p>
+        </div>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <!-- Mesajele vor fi adăugate aici -->
+            </div>
+            <div id="typing-indicator" class="typing-indicator">
+                <span>Bot is typing...</span>
+            </div>
+            <div class="input-box">
+                <input type="text" id="userInput" placeholder="Type a message..." autofocus>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+        <div class="settings-panel">
+            <div class="theme-switch">
+                <label for="theme-switch">Dark Mode:</label>
+                <input type="checkbox" id="theme-switch" onclick="toggleTheme()">
+            </div>
+            <div class="font-size-adjust">
+                <label for="font-size-slider">Font Size:</label>
+                <input type="range" id="font-size-slider" min="12" max="24" value="16" oninput="adjustFontSize(this.value)">
+            </div>
+        </div>
+    </div>
+    <script src='static/js/script.js'></script>
+</body>
+</html>
