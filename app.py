@@ -7,13 +7,11 @@ import spacy
 import random
 from nltk.tokenize import word_tokenize
 
-# Încarcă modelul și datele
 nlp = spacy.load("ro_core_news_md")
 stop_words = nlp.Defaults.stop_words
 model = load_model('chatbot_model.h5')
 data = json.loads(open('intents_r.json').read())
 
-# Funcțiile tale de preprocesare
 def remove_diacritics(text):
     diacritic_map = {
         'ă': 'a', 'Ă': 'A',
