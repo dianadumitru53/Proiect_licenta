@@ -50,7 +50,7 @@ function sendMessage() {
             document.getElementById("userInput").value = "";
             document.getElementById("chat-box").scrollTop = document.getElementById("chat-box").scrollHeight;
         });
-    }, 1000); // Afișează indicatorul timp de 1 secundă
+    }, 1000); 
 }
 
 function toggleTheme() {
